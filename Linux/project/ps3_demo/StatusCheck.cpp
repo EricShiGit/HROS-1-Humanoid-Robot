@@ -147,6 +147,9 @@ void StatusCheck::Check(CM730 &cm730)
 //////////////////////////////////////////////////////////////////////////////////////			
 		if(PS3.key.Select != 0) 
 		{
+			cm730.DXLPowerOn(0);
+
+			/*
 		if(LinuxActionScript::m_is_running == 0)
 			{
 			m_cur_mode = SOCCER;
@@ -158,6 +161,7 @@ void StatusCheck::Check(CM730 &cm730)
 		      while(Action::GetInstance()->IsRunning() == true) usleep(8000);		
 			}
 		while(PS3.key.Select != 0) usleep(8000);
+		*/ 
 		}
 
 //////////////////////////////////////////////////////////////////////////////////////
@@ -287,7 +291,7 @@ void StatusCheck::Check(CM730 &cm730)
 		while(PS3.key.Select != 0) usleep(8000);
 		}		
 
-//////////////////////////////////////////////////////////////////////////////////////
+
 // PS3 R/C Control code
 //////////////////////////////////////////////////////////////////////////////////////
 
